@@ -1,0 +1,26 @@
+-python -m venv ve (already done)
+
+ACTIVATES THE VIRTUAL ENV
+-djn2\ve\Scripts>activate (already done)
+
+INSTALL THE LIBRARIES (already done)
+-pip install Django
+-pip install channels
+-pip install daphne
+
+pip freeze [SHOW ALL THE LIBRARIES INSTALLED]
+
+CREATE THE DJANGO-ADMIN (already done)
+-django-admin startproject webapp
+-cd webapp
+-python manage.py startapp app
+
+So now, 
+'djn2/webapp/app' is the application. and 
+'djn2/webapp/webapp' is the main folder of our project 
+
+STEPS TO START:
+1) .venv\Scripts\activate
+-once inside ve
+2) cd webapp
+3) python manage.py runserver
