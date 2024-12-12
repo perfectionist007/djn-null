@@ -20,7 +20,7 @@ So now,
 'djn2/webapp/webapp' is the main folder of our project 
 
 STEPS TO START:
-1) .venv\Scripts\activate
+1) ve\Scripts\activate
 -once inside ve
 2) cd webapp
 3) python manage.py runserver
