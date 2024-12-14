@@ -20,7 +20,10 @@ So now,
 'djn2/webapp/webapp' is the main folder of our project 
 
 STEPS TO START:
-1) ve\Scripts\activate
+1) -clone the repo:
+2) python -m venv ve
+3) ve\Scripts\activate
 -once inside ve
-2) cd webapp
-3) python manage.py runserver
+4) pip install -r requirements.txt
+5) cd webapp
+6) python manage.py runserver
