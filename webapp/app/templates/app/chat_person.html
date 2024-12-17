@@ -268,16 +268,21 @@
     </footer>
     <script>
 
-        const url = 'ws://127.0.0.1:8000/websocket/'
+        const url = 'ws://127.0.0.1:8000/websocket'
         const chat_websocket = new WebSocket(url);
 
         const send_button = document.getElementById("send-message-button")
+        const textarea = document.getElementById("the-message-to-send");  
+
         send_button.addEventListener("click", function(){
-            chat_websocket.send('{"type":"message", "message":"Hello"}');
+            const userMessage = textarea.value;
+            console.log("Sending:", userMessage);
+            chat_websocket.send(JSON.stringify({type: "message", message: userMessage}));
         });
 
         chat_websocket.onmessage = function(event){
-            console.log(event.data);
+            console.log("Received from server:", event.data);
+
         };
     </script>
 </body>

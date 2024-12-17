@@ -26,4 +26,14 @@ STEPS TO START:
 -once inside ve
 4) pip install -r requirements.txt
 5) cd webapp
-6) python manage.py runserver
+6) python manage.py makemigrations
+7) python manage.py migrate
+8) python manage.py createsuperuser
+superadmin; admin@admin.com; admin
+
+9) python manage.py runserver
+
+STARTING THE APP AFTER ALL THESE TIME:
+1) ve\Scripts\activate
+2) cd webapp
+3) python manage.py runserver
